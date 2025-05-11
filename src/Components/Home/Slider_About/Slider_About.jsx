@@ -35,20 +35,18 @@ export default function Slider_About() {
                 <SwiperSlide>
                     <img src='img/inspiration-center-1680.webp' />
                     <div class="support-description">
-                        Check out our helpful blog and inspiration center for tips and advice that you can use right away.
+                    برای نکات و توصیه‌هایی که می‌توانید فوراً از آنها استفاده کنید، به وبلاگ مفید و مرکز الهام‌بخش ما مراجعه کنید.
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src='img/guides-1680.webp' />
                     <div class="support-description">
-                        Check out our helpful blog and inspiration center for tips and advice that you can use right away.
-                    </div>
+                    برای نکات و توصیه‌هایی که می‌توانید فوراً از آنها استفاده کنید، به وبلاگ مفید و مرکز الهام‌بخش ما مراجعه کنید.                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src='img/makers-to-merchants-1680.webp' />
                     <div class="support-description">
-                        Check out our helpful blog and inspiration center for tips and advice that you can use right away.
-                    </div>
+                    برای نکات و توصیه‌هایی که می‌توانید فوراً از آنها استفاده کنید، به وبلاگ مفید و مرکز الهام‌بخش ما مراجعه کنید.                    </div>
                 </SwiperSlide>
 
             </Swiper>

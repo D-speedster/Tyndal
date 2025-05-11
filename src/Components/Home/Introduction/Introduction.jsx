@@ -15,11 +15,13 @@ export default function Introduction() {
                             <BsSpeedometer2></BsSpeedometer2>
                         </div>
                         <div className='card-body'>
-                            <h6 className='card-title text-center'>Get Going</h6>
-                            <p>Get step-by-step guidance on how to build and launch a website with expert starter guides and planning tools.</p>
+                            <h6 className='card-title text-center'>شروع کن !</h6>
+                            <p>
+                            با راهنماهای مبتدی و ابزارهای برنامه‌ریزی متخصص، راهنمایی گام به گام در مورد نحوه ساخت و راه‌اندازی وب‌سایت دریافت کنید.
+                            </p>
                         </div>
                         <div className='card-footer'>
-                            <a href="#">Learn More ...</a>
+                            <a href="#">مشاهده بیشتر ...</a>
                         </div>
                     </div>
 
@@ -30,11 +32,11 @@ export default function Introduction() {
                             <BsSpeedometer2></BsSpeedometer2>
                         </div>
                         <div className='card-body'>
-                            <h6 className='card-title text-center'>Get Going</h6>
-                            <p>Get step-by-step guidance on how to build and launch a website with expert starter guides and planning tools.</p>
+                            <h6 className='card-title text-center'>آنلاین شوید</h6>
+                            <p>با یک وب‌سایت حرفه‌ای دیده شوید. به راحتی با سازنده وب‌سایت رایگان ما سفارشی‌سازی کنید.</p>
                         </div>
                         <div className='card-footer'>
-                            <a href="#">Learn More ...</a>
+                            <a href="#">مشاهده بیشتر ...</a>
                         </div>
                     </div>
 
@@ -45,11 +47,11 @@ export default function Introduction() {
                             <BsSpeedometer2></BsSpeedometer2>
                         </div>
                         <div className='card-body'>
-                            <h6 className='card-title text-center'>Get Going</h6>
-                            <p>Get step-by-step guidance on how to build and launch a website with expert starter guides and planning tools.</p>
+                            <h6 className='card-title text-center'>فروش را شروع کنید</h6>
+                            <p>ابزارهای قدرتمند تجارت الکترونیک همه کاره برای ساده‌سازی مدیریت سفارش، ارسال و پرداخت‌ها.</p>
                         </div>
                         <div className='card-footer'>
-                            <a href="#">Learn More ...</a>
+                            <a href="#">مشاهده بیشتر ...</a>
                         </div>
                     </div>
 
@@ -60,11 +62,13 @@ export default function Introduction() {
                             <BsSpeedometer2></BsSpeedometer2>
                         </div>
                         <div className='card-body'>
-                            <h6 className='card-title text-center'>Get Going</h6>
-                            <p>Get step-by-step guidance on how to build and launch a website with expert starter guides and planning tools.</p>
+                            <h6 className='card-title text-center'>رشد کنید</h6>
+                            <p>
+                            با ابزارهای بازاریابی یکپارچه، از تبلیغات فیسبوک گرفته تا کمپین‌های ایمیلی خودکار، مشتریان جدید پیدا کنید.
+                            </p>
                         </div>
                         <div className='card-footer'>
-                            <a href="#">Learn More ...</a>
+                            <a href="#">مشاهده بیشتر ...</a>
                         </div>
                     </div>
 

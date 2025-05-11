@@ -42,7 +42,7 @@ export default function Home() {
             </section>
             <section className='Section_Des'>
                 <span>این کسب و کار شماست. شما این را دریافت کرده اید.</span>
-                <Title_Season title='We’re here to guide you through common hurdles when you need it.'></Title_Season>
+                <Title_Season title='ما اینجا هستیم تا در صورت نیاز، شما را در عبور از موانع رایج راهنمایی کنیم.'></Title_Season>
 
             </section>
             <section style={{ marginTop: '50px', marginBottom: '50px' }}>
