@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import '../Home.css'
 import { Button, Col, Container, Nav, NavDropdown, Navbar, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const ScrollCheck = useRef('');
@@ -25,10 +26,10 @@ export default function Header() {
                         <Col>
 
                             <Nav className="me-auto">
-                                <Nav.Link href="#home">تعرفه ها</Nav.Link>
-                                <Nav.Link href="#link">نمونه فروشگاه ها</Nav.Link>
-                                <Nav.Link href="#link">وبلاگ</Nav.Link>
-                                <Nav.Link href="#link">آموزش</Nav.Link>
+                                <Link to="#home">تعرفه ها</Link>
+                                <Link to="/websites">نمونه فروشگاه ها</Link>
+                                <Link to="#link">وبلاگ</Link>
+                                <Link to="#link">آموزش</Link>
 
                                 {/* <NavDropdown title="More" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Pricing</NavDropdown.Item>
@@ -46,7 +47,9 @@ export default function Header() {
                         </Col>
 
                         <Col>
-                            <img src='img/logo.svg' />
+                           <Link to='/'>
+                           <img src='img/logo.svg' />
+                           </Link>
                         </Col>
                         <Col>
                             <button className='btn me-3' style={{ fontSize: '16px', fontWeight: '600px', fontFamily: 'IRANYEKANBold !important' }}>ورود </button>
