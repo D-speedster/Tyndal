@@ -11,7 +11,7 @@ export default function Description(props) {
                 </p>
                 <div className='Description_Button'>
                     <button className='Start_btn'>شروع کنیم </button>
-                    <button className='btn'>طرح های بیشتر </button>
+                    <button className='btn' style={{fontSize : '16px' , fontWeight : '500px' , fontFamily : 'IRANYEKANMedium' , textShadow : '1px 1px 1px #CCC'}}>طرح های بیشتر </button>
                 </div>
             </div>
         </section>

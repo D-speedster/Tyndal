@@ -49,7 +49,7 @@ export default function Header() {
                             <img src='img/logo.svg' />
                         </Col>
                         <Col>
-                            <button className='btn me-3'>ورود </button>
+                            <button className='btn me-3' style={{ fontSize: '16px', fontWeight: '600px', fontFamily: 'IRANYEKANBold !important' }}>ورود </button>
                             <button className='btn btn_create'>ساخت فروشگاه</button>
                         </Col>
                     </Navbar.Collapse>
