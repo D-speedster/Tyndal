@@ -26,8 +26,8 @@ export default function Header() {
                         <Col>
 
                             <Nav className="me-auto">
-                                <Link to="#home">تعرفه ها</Link>
-                                <Link to="/websites">نمونه فروشگاه ها</Link>
+                                <Link to="/websites">وبسایت ها</Link>
+                                <Link to="/websites">تعرفه</Link>
                                 <Link to="#link">وبلاگ</Link>
                                 <Link to="#link">آموزش</Link>
 
