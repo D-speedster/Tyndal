@@ -9,6 +9,24 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  position: relative;
+}
+
+.imagePlaceholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  width: 100%;
+  max-width: 917px;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 .slideImage {

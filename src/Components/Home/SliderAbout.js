@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Lazy } from "swiper";
+import { Pagination } from "swiper";
 import { SLIDER_CONTENT } from '../../constants/content';
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/lazy";
 import styles from './SliderAbout.module.css';
 
 export default function SliderAbout() {
+    const [loadedImages, setLoadedImages] = useState({});
+
+    const handleImageLoad = (id) => {
+        setLoadedImages(prev => ({ ...prev, [id]: true }));
+    };
+
     return (
         <section className={styles.sliderContainer} aria-label="نمونه کارها و راهنماها">
             <Swiper
@@ -16,7 +21,6 @@ export default function SliderAbout() {
                 pagination={{
                     clickable: true,
                 }}
-                lazy={true}
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
@@ -31,19 +35,28 @@ export default function SliderAbout() {
                         spaceBetween: 30,
                     },
                 }}
-                modules={[Pagination, Lazy]}
+                modules={[Pagination]}
                 className="my-swiper"
             >
                 {SLIDER_CONTENT.map(({ id, image, description, title }) => (
                     <SwiperSlide key={id}>
                         <div className={styles.slide}>
                             <img 
-                                data-src={image}
+                                src={image}
                                 alt={title || `اسلاید ${id}`}
-                                className={`${styles.slideImage} swiper-lazy`}
+                                className={styles.slideImage}
                                 loading="lazy"
+                                onLoad={() => handleImageLoad(id)}
+                                style={{
+                                    opacity: loadedImages[id] ? 1 : 0,
+                                    transition: 'opacity 0.3s ease-in-out'
+                                }}
                             />
-                            <div className="swiper-lazy-preloader"></div>
+                            {!loadedImages[id] && (
+                                <div className={styles.imagePlaceholder}>
+                                    در حال بارگذاری...
+                                </div>
+                            )}
                             <p className={styles.slideDescription}>
                                 {description}
                             </p>
