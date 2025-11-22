@@ -1,0 +1,165 @@
+/* Header Styles */
+.headerHome {
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 0;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.headerHome.isActive {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 15.5px;
+  color: #2F3337;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.navLink:hover {
+  background-color: rgba(51, 116, 255, 0.1);
+  color: #3374FF;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btnLogin {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2F3337;
+  background: transparent;
+  border: 2px solid #2F3337;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnLogin:hover {
+  background-color: #2F3337;
+  color: #ffffff;
+}
+
+.btnCreateStore {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #606cec;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(96, 108, 236, 0.15);
+  transition: all 0.3s ease-in-out;
+  min-width: 150px;
+}
+
+.btnCreateStore:hover {
+  background: #4a56d4;
+  box-shadow: 0 5px 10px rgba(96, 108, 236, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Toggle */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #2F3337;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navLinks {
+    gap: 15px;
+  }
+  
+  .navLink {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .btnLogin,
+  .btnCreateStore {
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+  
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navLinks.active {
+    display: flex;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btnLogin,
+  .btnCreateStore {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 32px;
+  }
+  
+  .navbar {
+    padding: 0 15px;
+  }
+}

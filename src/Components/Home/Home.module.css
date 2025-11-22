@@ -1,0 +1,135 @@
+/* Home Component Styles */
+.headerMain {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin: 60px 0;
+}
+
+.divider {
+  margin: 80px 0;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Shopping Image Section */
+.shoppingImage {
+  position: relative;
+  margin: 100px 0;
+}
+
+.shoppingImageMain {
+  width: 100%;
+  height: 750px;
+  background-image: url('https://www.lifewire.com/thmb/WvtK5mB50zGQPtTGvhZ-Ga5Ng-g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Primary-Image-shopping-sites-online-3482901-d743a0c886a24385ae0990af5eac4901.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.shoppingImageTiny {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -200px;
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* Section Description */
+.sectionDes {
+  margin-top: 300px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.sectionDes span {
+  color: #778383;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* End Section */
+.endSection {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.endSection h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2F3337;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .shoppingImageMain {
+    height: 500px;
+  }
+  
+  .shoppingImageTiny {
+    bottom: -150px;
+  }
+  
+  .sectionDes {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoppingImageMain {
+    height: 400px;
+  }
+  
+  .shoppingImageTiny {
+    bottom: -100px;
+    width: 95%;
+  }
+  
+  .sectionDes {
+    margin-top: 180px;
+  }
+  
+  .endSection h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shoppingImageMain {
+    height: 312px;
+  }
+  
+  .shoppingImageTiny {
+    bottom: -80px;
+  }
+  
+  .sectionDes {
+    margin-top: 150px;
+  }
+  
+  .endSection {
+    padding: 60px 20px;
+  }
+  
+  .endSection h2 {
+    font-size: 20px;
+  }
+}

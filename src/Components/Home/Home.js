@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Container } from 'react-bootstrap';
 import { HOME_CONTENT } from '../../constants/content';
-import './Home.css';
+import styles from './Home.module.css';
 import Header from './Header';
-import Introduction from './Introduction';
-import SliderAbout from './SliderAbout';
 import { Description, TitleSeason, Welcome, SlideWelcome, Footer } from './components';
+
+// Lazy load components for better performance
+const Introduction = lazy(() => import('./Introduction'));
+const SliderAbout = lazy(() => import('./SliderAbout'));
+
+// Loading component
+const LoadingSpinner = () => (
+    <div style={{ textAlign: 'center', padding: '40px' }}>
+        <p>در حال بارگذاری...</p>
+    </div>
+);
 
 export default function Home() {
     return (
-        <div>
-            <section className='header-main'>
+        <main>
+            <section className={styles.headerMain}>
                 <Header />
                 <Welcome />
-                <div className='container'>
+                <Container>
                     <SlideWelcome />
-                </div>
+                </Container>
             </section>
 
             <Description 
@@ -23,15 +32,23 @@ export default function Home() {
                 description={HOME_CONTENT.sections.buildWebsite.description}
             />
             
-            <section>
-                <img src='img/design-xl.webp' className='img-fluid' alt='Design' />
+            <section className={styles.section}>
+                <img 
+                    src='img/design-xl.webp' 
+                    alt='طراحی وب‌سایت حرفه‌ای' 
+                    style={{ width: '100%', height: 'auto' }}
+                    loading="lazy"
+                />
             </section>
             
             <TitleSeason title={HOME_CONTENT.sections.successTitle} />
-            <Introduction />
+            
+            <Suspense fallback={<LoadingSpinner />}>
+                <Introduction />
+            </Suspense>
             
             <Container>
-                <hr className='my-5' />
+                <hr className={styles.divider} />
             </Container>
             
             <Description 
@@ -39,22 +56,31 @@ export default function Home() {
                 description={HOME_CONTENT.sections.sellFreedom.description}
             />
             
-            <section className='shopping-image'>
-                <div className='shopping-image-main'></div>
-                <img src='img/browser-1680.webp' className='shopping-image-tiny' alt='Browser' />
+            <section className={styles.shoppingImage}>
+                <div 
+                    className={styles.shoppingImageMain}
+                    role="img"
+                    aria-label="تصویر فروشگاه آنلاین"
+                ></div>
+                <img 
+                    src='img/browser-1680.webp' 
+                    className={styles.shoppingImageTiny} 
+                    alt='نمای مرورگر فروشگاه' 
+                    loading="lazy"
+                />
             </section>
             
-            <section className='section-des'>
+            <section className={styles.sectionDes}>
                 <span>{HOME_CONTENT.sections.support.message}</span>
                 <TitleSeason title={HOME_CONTENT.sections.support.title} />
             </section>
             
-            <section className='my-5'>
+            <Suspense fallback={<LoadingSpinner />}>
                 <SliderAbout />
-            </section>
+            </Suspense>
             
             <Container>
-                <hr className='my-5' />
+                <hr className={styles.divider} />
             </Container>
             
             <Description 
@@ -62,15 +88,18 @@ export default function Home() {
                 description={HOME_CONTENT.sections.buildPath.description}
             />
             
-            <img src='img/customer-success-1680.webp' className='img-fluid' alt='Customer Success' />
+            <img 
+                src='img/customer-success-1680.webp' 
+                alt='موفقیت مشتریان' 
+                style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
+            />
             
-            <section className='end-section'>
+            <section className={styles.endSection}>
                 <h2>{HOME_CONTENT.sections.finalCta}</h2>
             </section>
 
-            <section className='pt-5'>
-                <Footer />
-            </section>
-        </div>
-    )
+            <Footer />
+        </main>
+    );
 }
