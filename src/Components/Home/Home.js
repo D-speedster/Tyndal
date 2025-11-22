@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { HOME_CONTENT } from '../../constants/content';
 import './Home.css';
 import Header from './Header';
 import Introduction from './Introduction';
@@ -9,7 +10,7 @@ import { Description, TitleSeason, Welcome, SlideWelcome, Footer } from './compo
 export default function Home() {
     return (
         <div>
-            <section className='Header_Main'>
+            <section className='header-main'>
                 <Header />
                 <Welcome />
                 <div className='container'>
@@ -18,24 +19,24 @@ export default function Home() {
             </section>
 
             <Description 
-                title='یک وب سایت رایگان بسازید که با کسب و کار شما رشد کند.'
-                dialog='برای ساختن وب سایت خود و رشد کسب و کار ایده آل خود به طرح های صفحه وب قابل تنظیم و ابزارهای مفید دسترسی پیدا کنید. به راحتی یک وب سایت رایگان بسازید تا به شما کمک کند تا مشتریان خود را کشف کنید و به سبک خود رشد دهید. امروز با سازنده وب سایت قدرتمند و رایگان ما شروع کنید.'
+                title={HOME_CONTENT.sections.buildWebsite.title}
+                description={HOME_CONTENT.sections.buildWebsite.description}
             />
             
             <section>
                 <img src='img/design-xl.webp' className='img-fluid' alt='Design' />
             </section>
             
-            <TitleSeason title='با سازنده وب سایت مناسب، از ابتدا تا رشد، موفق باشید' />
+            <TitleSeason title={HOME_CONTENT.sections.successTitle} />
             <Introduction />
             
             <Container>
-                <hr style={{ marginTop: '60px' }} />
+                <hr className='my-5' />
             </Container>
             
             <Description 
-                title='آزادی در فروش، هر زمان و هر جا با تیندال'
-                dialog='تیندال، همراه مطمئن فروشگاه‌ساز شماست. از فروش حضوری تا فروشگاه آنلاین، تیندال فرآیند پرداخت را ساده و امن می‌کند تا شما فقط روی رشد کسب‌وکارتان تمرکز کنید.'
+                title={HOME_CONTENT.sections.sellFreedom.title}
+                description={HOME_CONTENT.sections.sellFreedom.description}
             />
             
             <section className='shopping-image'>
@@ -43,30 +44,28 @@ export default function Home() {
                 <img src='img/browser-1680.webp' className='shopping-image-tiny' alt='Browser' />
             </section>
             
-            <section className='Section_Des'>
-                <span>این کسب و کار شماست. شما این را دریافت کرده اید.</span>
-                <div style={{ marginTop: '-20px' }}>
-                    <TitleSeason title='ما اینجا هستیم تا در صورت نیاز، شما را در عبور از موانع رایج راهنمایی کنیم.' />
-                </div>
+            <section className='section-des'>
+                <span>{HOME_CONTENT.sections.support.message}</span>
+                <TitleSeason title={HOME_CONTENT.sections.support.title} />
             </section>
             
-            <section style={{ marginTop: '50px', marginBottom: '50px' }}>
+            <section className='my-5'>
                 <SliderAbout />
             </section>
             
             <Container>
-                <hr style={{ marginTop: '60px' }} />
+                <hr className='my-5' />
             </Container>
             
             <Description 
-                title='وب‌سایتت رو بساز، مسیر موفقیتت رو هم باهاش بساز با تیندال'
-                dialog='از چالش‌های فنی کوچک و بزرگ تا مشاوره برای رشد کسب‌وکار، تیم پشتیبانی تیندال همیشه همراهته — فقط یک پیام یا تماس فاصله‌ست. ساخت فروشگاهتو رایگان با تیندال شروع کن و در طول مسیر روی ما حساب کن.'
+                title={HOME_CONTENT.sections.buildPath.title}
+                description={HOME_CONTENT.sections.buildPath.description}
             />
             
             <img src='img/customer-success-1680.webp' className='img-fluid' alt='Customer Success' />
             
             <section className='end-section'>
-                <h2>کسب و کار خود را در هر زمان و هر مکان رشد دهید.</h2>
+                <h2>{HOME_CONTENT.sections.finalCta}</h2>
             </section>
 
             <section className='pt-5'>

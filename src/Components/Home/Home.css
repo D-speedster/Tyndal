@@ -1,0 +1,357 @@
+/* Header Styles */
+.header-home {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-home.is-active {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-home .navbar {
+  padding: 1rem 0;
+}
+
+.header-home .btn-login {
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-home .btn-create-store {
+  background-color: #5469d4;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.header-main {
+  padding-top: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.dialog {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.dialog h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.btn-top-head {
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #1a1a1a;
+  border: none;
+}
+
+/* Slider Welcome */
+.slider-welcome {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider-welcome img {
+  width: 100%;
+  height: auto;
+}
+
+/* Description Section */
+.description {
+  padding: 4rem 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+}
+
+.description-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-start {
+  background-color: #5469d4;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-start:hover {
+  background-color: #4053b8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #5469d4;
+  padding: 0.75rem 2rem;
+  border: 2px solid #5469d4;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #5469d4;
+  color: white;
+}
+
+/* Title Season */
+.title-season {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.title-season h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Introduction Cards */
+.introduction {
+  padding: 2rem 0;
+}
+
+.introduction .card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.introduction .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.introduction .card-header {
+  text-align: center;
+  font-size: 3rem;
+  color: #5469d4;
+  margin-bottom: 1rem;
+}
+
+.introduction .card-body {
+  text-align: center;
+}
+
+.introduction .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.introduction .card-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.introduction .card-footer {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.introduction .card-footer a {
+  color: #5469d4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.introduction .card-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Shopping Image Section */
+.shopping-image {
+  position: relative;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.shopping-image-main {
+  background-color: #f5f5f5;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.shopping-image-tiny {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Section Description */
+.section-des {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.section-des span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Slider About */
+.my-swiper {
+  padding: 2rem 0;
+}
+
+.my-swiper img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.support-description {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* End Section */
+.end-section {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.end-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer ul li:hover {
+  color: #5469d4;
+}
+
+.end-footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.copy-right {
+  text-align: left;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-media div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-media div:hover {
+  background-color: #5469d4;
+}
+
+.social-media svg {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dialog h1 {
+    font-size: 1.8rem;
+  }
+  
+  .description h2,
+  .title-season h2 {
+    font-size: 1.5rem;
+  }
+  
+  .introduction .card {
+    margin-bottom: 1rem;
+  }
+  
+  .social-media {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .copy-right {
+    text-align: center;
+  }
+}
